@@ -15,3 +15,15 @@ xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
             </i:Interaction.Triggers>
         </TextBox>
 ```
+# 添加右键菜单
+每个xaml节点都有个ContextMenu属性
+
+``` cs
+<ListViewItem.ContextMenu>
+    <ContextMenu>
+        <MenuItem Header="使用" />
+        <MenuItem Header="添加" />
+        <MenuItem Header="移除" />
+    </ContextMenu>
+</ListViewItem.ContextMenu>
+```
